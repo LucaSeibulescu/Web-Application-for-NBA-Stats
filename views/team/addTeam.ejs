@@ -1,0 +1,62 @@
+<% layout('layouts/boilerplate') %>
+  <!-- write html code from here to the comment below-->
+  <form action="/addTeam" method="POST" class="validated-form" novalidate>
+    <div class="mb-3">
+      <label class="form-label" for="teamname">Owner id</label>
+      <input class="form-control" type="number" id="ownerid" name="team[ownerid]" required />
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="teamname">Coach id</label>
+      <input class="form-control" type="number" id="coachid" name="team[coachid]" required />
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="teamname">Team Name</label>
+      <input class="form-control" type="text" id="teamname" name="team[teamname]" required />
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="city">City</label>
+      <input class="form-control" type="text" id="city" name="team[city]" required />
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="points"> Points</label>
+      <input class="form-control" type="number" id="points" name="team[points]" required />
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="rebounds"> Rebounds</label>
+      <input class="form-control" type="number" id="rebounds" name="team[rebounds]" required />
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="assists"> Assists</label>
+      <input class="form-control" type="number" id="assists" name="team[assists]" required />
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="blocks"> Blocks</label>
+      <input class="form-control" type="number" id="blocks" name="team[blocks]" required />
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="steals"> Steals</label>
+      <input class="form-control" type="number" id="steals" name="team[steals]" required />
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="turnovers"> Turnovers</label>
+      <input class="form-control" type="number" id="turnovers" name="team[turnovers]" required />
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="fgrate"> FG Rate</label>
+      <input class="form-control" type="number" id="fgrate" name="team[fgrate]" required />
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="ftrate"> FT Rate</label>
+      <input class="form-control" type="number" id="ftrate" name="team[ftrate]" required />
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="wins"> Wins</label>
+      <input class="form-control" type="number" id="wins" name="team[wins]" required />
+    </div>
+    <button class="btn btn-primary btn-block">Add</button>
+  </form>
+
+  <!-- do not make changes below this line. Do not delete the three div here -->
+  </div>
+  </div>
+  </div>

@@ -1,0 +1,48 @@
+<% layout('layouts/boilerplate') %>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">Owner First Name</th>
+            <th scope="col">Owner Last Name</th>
+            <th scope="col">Coach First Name</th>
+            <th scope="col">Coach Last Name</th>
+            <th scope="col">Team Name</th>
+            <th scope="col">Owner Win Percentage</th>
+            <th scope="col">Coach Win Percentage</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% for (let row of rows) {%>
+            <tr>
+                <td>
+                    <%= row.Owner_first_name %>
+                </td>
+                <td>
+                    <%= row.Owner_last_name %>
+                </td>
+                <td>
+                    <%= row.First_name %>
+                </td>
+                <td>
+                    <%= row.Last_name %>
+                </td>
+                <td>
+                    <%= row.Team_name %>
+                </td>
+                <td>
+                    <%= row.OwnerWins %>
+                </td>
+                <td>
+                    <%= row.Win_percentage %>
+                </td>
+            </tr>
+            <% }%>
+    </tbody>
+</table>
+<form action="/usefulQueries" method="GET" class="validated-form" novalidate>
+    <button class="btn btn-primary btn-block">Back</button>
+</form>
+</div>
+</div>
+</div>

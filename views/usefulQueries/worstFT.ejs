@@ -1,0 +1,28 @@
+<% layout('layouts/boilerplate') %>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th cope="col">Team Name</th>
+            <th cope="col">FT Rate</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% for (let row of rows) {%>
+            <tr>
+                <td>
+                    <%= row.Team_name %>
+                </td>
+                <td>
+                    <%= row.FT_rate %>
+                </td>
+            </tr>
+            <% }%>
+    </tbody>
+</table>
+<form action="/usefulQueries" method="GET" class="validated-form" novalidate>
+    <button class="btn btn-primary btn-block">Back</button>
+</form>
+</div>
+</div>
+</div>

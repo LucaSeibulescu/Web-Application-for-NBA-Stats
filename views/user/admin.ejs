@@ -1,0 +1,44 @@
+<% layout('layouts/boilerplate') %>
+    <!-- write html code from here to the comment below-->
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">User_id</th>
+                <th scope="col">Username</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for (let row of rows) {%>
+                <tr>
+                    <td>
+                        <%= row.id %>
+                    </td>
+                    <td>
+                        <%=row.username %>
+                    </td>
+                    <td>
+                        <%=row.email %>
+                    </td>
+                    <td>
+                        <%=row.phone %>
+                    </td>
+                </tr>
+                <% }%>
+        </tbody>
+
+    </table>
+    <form action="/deleteUser" method="POST" class="validated-form" novalidate>
+        <div class="mb-3">
+            <label class="form-label" for="teamname">User_id</label>
+            <input class="form-control" type="number" id="userid" name="userid" required />
+        </div>
+        <button class="btn btn-primary btn-block">Delete Fan</button>
+    </form>
+
+
+    <!-- do not make changes below this line. Do not delete the three div here -->
+    </div>
+    </div>
+    </div>

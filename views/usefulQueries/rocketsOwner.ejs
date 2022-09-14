@@ -1,0 +1,28 @@
+<% layout('layouts/boilerplate') %>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th cope="col">Owner First Name</th>
+            <th cope="col">Owner Last Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% for (let row of rows) {%>
+            <tr>
+                <td>
+                    <%= row.Owner_first_name %>
+                </td>
+                <td>
+                    <%= row.Owner_last_name %>
+                </td>
+            </tr>
+            <% }%>
+    </tbody>
+</table>
+<form action="/usefulQueries" method="GET" class="validated-form" novalidate>
+    <button class="btn btn-primary btn-block">Back</button>
+</form>
+</div>
+</div>
+</div>

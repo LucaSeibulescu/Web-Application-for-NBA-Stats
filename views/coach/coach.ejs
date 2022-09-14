@@ -1,0 +1,61 @@
+<% layout('layouts/boilerplate') %>
+    <!-- write html code from here to the comment below-->
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Coach_id</th>
+                <th scope="col">First_name</th>
+                <th scope="col">Last_name</th>
+                <th scope="col">Teams_coached</th>
+                <th scope="col">Years_coached</th>
+                <th scope="col">Wins</th>
+                <th scope="col">Losses</th>
+                <th scope="col">Win_percentage</th>
+                <th scope="col">Championships</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+            <% for (let row of rows) {%>
+                <tr>
+                    <td>
+                        <%= row.Coach_id %>
+                    </td>
+                    <td>
+                        <%= row.First_name %>
+                    </td>
+                    <td>
+                        <%=row.Last_name %>
+                    </td>
+                    <td>
+                        <%=row.Teams_coached %>
+                    </td>
+                    <td>
+                        <%=row.Years_coached %>
+                    </td>
+                    <td>
+                        <%=row.Wins %>
+                    </td>
+                    <td>
+                        <%=row.Losses %>
+                    </td>
+                    <td>
+                        <%=row.Win_percentage %>
+                    </td>
+                    <td>
+                        <%=row.Championships %>
+                    </td>
+                </tr>
+                <% }%>
+
+        </tbody>
+    </table>
+    <a class="btn btn-primary" href="/addCoach" role="button">Add Coach</a>
+    <a class="btn btn-primary" href="/updateCoach" role="button">Update Coach</a>
+    <a class="btn btn-primary" href="/deleteCoach" role="button">Delete Coach</a>
+
+    <!-- do not make changes below this line. Do not delete the three div here -->
+    </div>
+    </div>
+    </div>

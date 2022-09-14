@@ -1,0 +1,32 @@
+<% layout('layouts/boilerplate') %>
+    <!-- write html code from here to the comment below-->
+    <form action="/updateOwner" method="POST" class="validated-form" novalidate>
+        <div class="mb-3">
+            <label class="form-label" for="ownerid">Owner id</label>
+            <input class="form-control" type="number" id="ownerid" name="owner[ownerid]" required />
+        </div>
+        <div class="mb-3">
+            Attributes
+            <select class="form-select" aria-label="Default select example" name="attributes">
+                <option value="Owner_id">Owner id</option>
+                <option value="First_name">First name</option>
+                <option value="Last_name">Last name</option>
+                <option value="Wins">Wins</option>
+                <option value="Losses">Losses</option>
+                <option value="Championships">Championships</option>
+                <option value="Win_percentage">Win percentage</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="ownerid">New value</label>
+            <input class="form-control" type="text" id="ownerid" name="owner[updatedVal]" required />
+        </div>
+
+
+        <button class="btn btn-primary btn-block">Update</button>
+    </form>
+
+    <!-- do not make changes below this line. Do not delete the three div here -->
+    </div>
+    </div>
+    </div>

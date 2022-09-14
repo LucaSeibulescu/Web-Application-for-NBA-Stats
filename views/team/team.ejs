@@ -1,0 +1,81 @@
+<% layout('layouts/boilerplate') %>
+    <!-- write html code from here to the comment below-->
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Team_id</th>
+                <th scope="col">Owner_id</th>
+                <th scope="col">Coach_id</th>
+                <th scope="col">Team_name</th>
+                <th scope="col">City</th>
+                <th scope="col">Points</th>
+                <th scope="col">Rebounds</th>
+                <th scope="col">Assists</th>
+                <th scope="col">Blocks</th>
+                <th scope="col">Steals</th>
+                <th scope="col">Turnovers</th>
+                <th scope="col">FG_rate</th>
+                <th scope="col">FT_rate</th>
+                <th scope="col">Wins</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+            <% for (let row of rows) {%>
+                <tr>
+                    <td>
+                        <%= row.Team_id %>
+                    </td>
+                    <td>
+                        <%=row.Owner_id %>
+                    </td>
+                    <td>
+                        <%=row.Coach_id %>
+                    </td>
+                    <td>
+                        <%=row.Team_name %>
+                    </td>
+                    <td>
+                        <%=row.City %>
+                    </td>
+                    <td>
+                        <%=row.Points %>
+                    </td>
+                    <td>
+                        <%=row.Rebounds %>
+                    </td>
+                    <td>
+                        <%=row.Assists %>
+                    </td>
+                    <td>
+                        <%=row.Blocks %>
+                    </td>
+                    <td>
+                        <%=row.Steals %>
+                    </td>
+                    <td>
+                        <%=row.Turnovers %>
+                    </td>
+                    <td>
+                        <%=row.FG_rate %>
+                    </td>
+                    <td>
+                        <%=row.FT_rate %>
+                    </td>
+                    <td>
+                        <%=row.Wins %>
+                    </td>
+                </tr>
+                <% }%>
+
+        </tbody>
+    </table>
+    <a class="btn btn-primary" href="/addTeam" role="button">Add Team</a>
+    <a class="btn btn-primary" href="/updateTeam" role="button">Update Team</a>
+    <a class="btn btn-primary" href="/deleteTeam" role="button">Delete Team</a>
+
+    <!-- do not make changes below this line. Do not delete the three div here -->
+    </div>
+    </div>
+    </div>

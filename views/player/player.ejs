@@ -1,0 +1,76 @@
+<% layout('layouts/boilerplate') %>
+    <!-- write html code from here to the comment below-->
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">Player_ID</th>
+            <th scope="col">Team_ID</th>
+            <th scope="col">First_name</th>
+            <th scope="col">Last_name</th>
+            <th scope="col">Minutes_played</th>
+            <th scope="col">Points_scored</th>
+            <th scope="col">Field_goal_Percent</th>
+            <th scope="col">Three_point_percent</th>
+            <th scope="col">Total_Rebounds</th>
+            <th scope="col">Assists</th>
+            <th scope="col">Blocks</th>
+            <th scope="col">Turnovers</th>
+            <th scope="col">Steals</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <% for (let row of rows) {%>
+        <tr>
+            <td>
+                <%= row.Player_ID %>
+            </td>
+            <td>
+                <%= row.Team_ID %>
+            </td>
+            <td>
+                <%= row.First_name %>
+            </td>
+            <td>
+                <%= row.Last_name %>
+            </td>
+            <td>
+                <%= row.Minutes_played %>
+            </td>
+            <td>
+                <%= row.Points_scored %>
+            </td>
+            <td>
+                <%= row.Field_goal_Percent %>
+            </td>
+            <td>
+                <%= row.Three_point_percent %>
+            </td>
+            <td>
+                <%= row.Total_Rebounds %>
+            </td>
+            <td>
+                <%= row.Assists %>
+            </td>
+            <td>
+                <%= row.Blocks %>
+            </td>
+            <td>
+                <%= row.Turnovers %>
+            </td>
+            <td>
+                <%= row.Steals %>
+            </td>
+        </tr>
+        <% }%>
+    </tbody>
+</table>
+
+<a class="btn btn-primary" href="/addPlayer" role="button">Add Player</a>
+<a class="btn btn-primary" href="/updatePlayer" role="button">Update Player</a>
+<a class="btn btn-primary" href="/deletePlayer" role="button">Delete Player</a>
+
+    <!-- do not make changes below this line. Do not delete the three div here -->
+    </div>
+    </div>
+    </div>

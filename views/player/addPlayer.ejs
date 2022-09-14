@@ -1,0 +1,58 @@
+<% layout('layouts/boilerplate') %>
+    <!-- write html code from here to the comment below-->
+    <form action="/addPlayer" method="POST" class="validated-form" novalidate>
+        <div class="mb-3">
+          <label class="form-label" for="teamid">Team_ID</label>
+          <input class="form-control" type="number" id="teamid" name="player[teamid]" required />
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="firstname">First Name</label>
+          <input class="form-control" type="text" id="firstname" name="player[firstname]" required />
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="lastname">Last Name</label>
+          <input class="form-control" type="text" id="lastname" name="player[lastname]" required />
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="minutesplayed">Minutes Played</label>
+          <input class="form-control" type="number" id="minutesplayed" name="player[minutesplayed]" required />
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="points"> Points</label>
+          <input class="form-control" type="number" id="points" name="player[points]" required />
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="fgperc"> Field Goal Percentage</label>
+          <input class="form-control" type="number" id="fgperc" name="player[fgperc]" required />
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="threeptperc"> Three Point Percentage</label>
+          <input class="form-control" type="number" id="threeptperc" name="player[threeptperc]" required />
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="rebounds"> Total Rebounds</label>
+          <input class="form-control" type="number" id="rebounds" name="player[rebounds]" required />
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="assists"> Total Assists</label>
+          <input class="form-control" type="number" id="assists" name="player[assists]" required />
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="turnovers"> Turnovers</label>
+          <input class="form-control" type="number" id="turnovers" name="player[turnovers]" required />
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="steals"> Steals</label>
+          <input class="form-control" type="number" id="steals" name="player[steals]" required />
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="blocks"> Blocks</label>
+          <input class="form-control" type="number" id="blocks" name="player[blocks]" required />
+        </div>
+        <button class="btn btn-primary btn-block">Add</button>
+      </form>
+
+    <!-- do not make changes below this line. Do not delete the three div here -->
+    </div>
+    </div>
+    </div>

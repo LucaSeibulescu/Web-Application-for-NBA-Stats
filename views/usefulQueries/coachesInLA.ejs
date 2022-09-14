@@ -1,0 +1,32 @@
+<% layout('layouts/boilerplate') %>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th cope="col">First Name</th>
+            <th cope="col">Last Name</th>
+            <th cope="col">Team Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% for (let row of rows) {%>
+            <tr>
+                <td>
+                    <%= row.First_name %>
+                </td>
+                <td>
+                    <%= row.Last_name %>
+                </td>
+                <td>
+                    <%= row.Team_name %>
+                </td>
+            </tr>
+            <% }%>
+    </tbody>
+</table>
+<form action="/usefulQueries" method="GET" class="validated-form" novalidate>
+    <button class="btn btn-primary btn-block">Back</button>
+</form>
+</div>
+</div>
+</div>

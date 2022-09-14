@@ -1,0 +1,55 @@
+<% layout('layouts/boilerplate') %>
+    <!-- write html code from here to the comment below-->
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Owner_id</th>
+                <th scope="col">First_name</th>
+                <th scope="col">Last_name</th>
+                <th scope="col">Wins</th>
+                <th scope="col">Losses</th>
+                <th scope="col">Championships</th>
+                <th scope="col">Win_percentage</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+            <% for (let row of rows) {%>
+                <tr>
+                    <td>
+                        <%= row.Owner_id %>
+                    </td>
+                    <td>
+                        <%=row.First_name %>
+                    </td>
+                    <td>
+                        <%=row.Last_name %>
+                    </td>
+                    <td>
+                        <%=row.Wins %>
+                    </td>
+                    <td>
+                        <%=row.Losses %>
+                    </td>
+                    <td>
+                        <%=row.Championships %>
+                    </td>
+                    <td>
+                        <%=row.Win_percentage %>
+                    </td>
+                </tr>
+                <% }%>
+
+        </tbody>
+    </table>
+
+    <a class="btn btn-primary" href="/addOwner" role="button">Add Owner</a>
+    <a class="btn btn-primary" href="/updateOwner" role="button">Update Owner</a>
+    <a class="btn btn-primary" href="/deleteOwner" role="button">Delete Owner</a>
+
+    <!-- do not make changes below this line. Do not delete the three div here -->
+    </div>
+    </div>
+    </div>

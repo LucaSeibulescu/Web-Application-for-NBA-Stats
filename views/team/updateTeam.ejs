@@ -1,0 +1,38 @@
+<% layout('layouts/boilerplate') %>
+    <!-- write html code from here to the comment below-->
+    <form action="/updateTeam" method="POST" class="validated-form" novalidate>
+        <div class="mb-3">
+            <label class="form-label" for="teamname">Team id</label>
+            <input class="form-control" type="number" id="ownerid" name="team[teamid]" required />
+        </div>
+        <div class="mb-3">
+            Attributes
+            <select class="form-select" aria-label="Default select example" name="attributes">
+                <option value="Owner_id">Owner_id</option>
+                <option value="Coach_id">Coach_id</option>
+                <option value="Team_name">Team_name</option>
+                <option value="City">City</option>
+                <option value="Points">Points</option>
+                <option value="Rebounds">Rebounds</option>
+                <option value="Assists">Assists</option>
+                <option value="Blocks">Blocks</option>
+                <option value="Steals">Steals</option>
+                <option value="Turnovers">Turnovers</option>
+                <option value="FG_rate">FG_rate</option>
+                <option value="FT_rate">FT_rate</option>
+                <option value="Wins">Wins</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="teamname">New value</label>
+            <input class="form-control" type="text" id="ownerid" name="team[updatedVal]" required />
+        </div>
+
+
+        <button class="btn btn-primary btn-block">Update</button>
+    </form>
+
+    <!-- do not make changes below this line. Do not delete the three div here -->
+    </div>
+    </div>
+    </div>

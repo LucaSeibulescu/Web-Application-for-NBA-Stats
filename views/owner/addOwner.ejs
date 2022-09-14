@@ -1,0 +1,39 @@
+<% layout('layouts/boilerplate') %>
+  <!-- write html code from here to the comment below-->
+
+  <form action="/addOwner" method="POST" class="validated-form" novalidate>
+    <div class="mb-3">
+      <label class="form-label" for="ownerid">Owner_id</label>
+      <input class="form-control" type="number" id="ownerid" name="owner[ownerid]" required />
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="firstname">First Name</label>
+      <input class="form-control" type="text" id="firstname" name="owner[firstname]" required />
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="lastname">Last Name</label>
+      <input class="form-control" type="text" id="lastname" name="owner[lastname]" required />
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="wins">Wins</label>
+      <input class="form-control" type="number" id="wins" name="owner[wins]" required />
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="losses"> Losses</label>
+      <input class="form-control" type="number" id="losses" name="owner[losses]" required />
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="championships"> Championships</label>
+      <input class="form-control" type="number" id="championships" name="owner[championships]" required />
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="winpercent"> Win Percentage</label>
+      <input class="form-control" type="number" id="winpercent" name="owner[winpercent]" required />
+    </div>
+    <button class="btn btn-primary btn-block">Add</button>
+  </form>
+
+  <!-- do not make changes below this line. Do not delete the three div here -->
+  </div>
+  </div>
+  </div>

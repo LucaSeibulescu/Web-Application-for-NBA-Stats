@@ -1,0 +1,42 @@
+<% layout('layouts/boilerplate') %>
+  <!-- write html code from here to the comment below-->
+  <form action="/addCoach" method="POST" class="validated-form" novalidate>
+    <div class="mb-3">
+      <label class="form-label" for="firstname">First Name</label>
+      <input class="form-control" type="text" id="fisrtname" name="coach[firstname]" required />
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="lastname">Last Name</label>
+      <input class="form-control" type="text" id="lastname" name="coach[lastname]" required />
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="teamscoached">Teams Coached</label>
+      <input class="form-control" type="text" id="teamscoached" name="coach[teamscoached]" required />
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="yearscoached"> Years Coached</label>
+      <input class="form-control" type="number" id="yearscoached" name="coach[yearscoached]" required />
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="wins"> Wins</label>
+      <input class="form-control" type="number" id="wins" name="coach[wins]" required />
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="loesses"> Losses</label>
+      <input class="form-control" type="number" id="losses" name="coach[losses]" required />
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="winpercentage"> Win Percentage</label>
+      <input class="form-control" type="number" id="winpercentage" name="coach[winpercentage]" required />
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="championships"> Championships</label>
+      <input class="form-control" type="number" id="championships" name="coach[championships]" required />
+    </div>
+    <button class="btn btn-primary btn-block">Add</button>
+  </form>
+
+  <!-- do not make changes below this line. Do not delete the three div here -->
+  </div>
+  </div>
+  </div>
